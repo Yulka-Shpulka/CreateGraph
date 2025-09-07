@@ -1,0 +1,6 @@
+C:\Users\Исаев\Desktop\WinFormsGraph-master\WinFormsGraph\x64\Debug\WinFormsGraph.vcxproj.AssemblyReference.cache
+C:\Users\Исаев\Desktop\WinFormsGraph-master\WinFormsGraph\x64\Debug\WinFormsGraph.MyForm.resources
+C:\Users\Исаев\Desktop\WinFormsGraph-master\WinFormsGraph\x64\Debug\WinFormsGraph.vcxproj.GenerateResource.cache
+C:\Users\User\source\repos\Graph-generation\WinFormsGraph\x64\Debug\WinFormsGraph.vcxproj.AssemblyReference.cache
+C:\Users\User\source\repos\Graph-generation\WinFormsGraph\x64\Debug\WinFormsGraph.MyForm.resources
+C:\Users\User\source\repos\Graph-generation\WinFormsGraph\x64\Debug\WinFormsGraph.vcxproj.GenerateResource.cache

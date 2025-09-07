@@ -1,0 +1,13 @@
+﻿  MyForm.cpp
+C:\Users\User\source\repos\Graph-generation\MyForm.h(20,23): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+C:\Users\User\source\repos\Graph-generation\MyForm.h(319,129): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+C:\Users\User\source\repos\Graph-generation\MyForm.h(319,121): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  (компиляция исходного файла "MyForm.cpp")
+  
+C:\Users\User\source\repos\Graph-generation\MyForm.cpp(8,6): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  WinFormsGraph.vcxproj -> C:\Users\User\Source\Repos\Graph-generation\x64\Debug\WinFormsGraph.exe
