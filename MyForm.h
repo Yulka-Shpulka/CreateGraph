@@ -301,12 +301,21 @@ namespace WinFormsGraph {
 		}
 
 		void DrawGraph(array<array<int>^>^ matrix, int n) {
+			int R;
 			Graphics^ g = graphBox->CreateGraphics();
 			g->Clear(SystemColors::ButtonHighlight);
 			Pen^ pen = gcnew Pen(Color::Fuchsia);
 			Brush^ brush = gcnew SolidBrush(Color::Pink);
 			Brush^ textBrush = gcnew SolidBrush(Color::Black);
-			int R = 200;
+			if (n <= 20) {
+				R = 200;
+			}
+			else if (20 < n < 40) {
+				R = 250;
+			}
+			else {
+				R = 300;
+			}
 			Point center(graphBox->Width / 2, graphBox->Height / 2);
 			points = gcnew array<Point>(n);
 
@@ -317,7 +326,7 @@ namespace WinFormsGraph {
 				points[i] = Point(x, y);
 				g->FillEllipse(brush, x - 10, y - 10, 20, 20); // Заливка круга
 				g->DrawEllipse(pen, x - 10, y - 10, 20, 20); // Нарисовать границу круга
-				g->DrawString((i + 1).ToString(), gcnew System::Drawing::Font("Microsoft Sans Serif", 10), textBrush, x + 10, y - 10); // Нарисуйте число
+				g->DrawString((i + 1).ToString(), gcnew System::Drawing::Font("Microsoft Sans Serif", 10), textBrush, x , y ); 
 			}
 
 			for (int i = 0; i < n; i++) {
@@ -333,7 +342,7 @@ namespace WinFormsGraph {
 			if (points == nullptr || points->Length == 0)
 				return;
 
-			// Определите, был ли нажат щелчок по вершине
+			// Определит, был ли нажат щелчок по вершине
 			int clickedVertex = -1;
 			for (int i = 0; i < points->Length; i++) {
 				if (Math::Pow(e->X - points[i].X, 2) + Math::Pow(e->Y - points[i].Y, 2) <= 100) { // 100 - это пороговый радиус для щелчка по вершине
